@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project by Rohit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <section id="cap">
+        <h1 class="cap-txt">TEJ Application Project</h1>
+      </section>
+      <hr />
+      <form class="form">
+        <h2>Samosa</h2>
+        <!-- Price Section -->
+        <div class="price">
+          <label>Price:</label>
+          <input type="number" id="price1" /><br />
+        </div>
+        <!-- Quantity Section -->
+        <div class="quantity">
+          <label for="quantity1">Quantity:</label>
+          <button id="add1" class="add" onclick="updateResult('quantity1', 1)">
+            +
+          </button>
+          <span type="number" id="quantity1" class="values">0</span>
+          <button
+            id="minus1"
+            class="minus"
+            onclick="updateResult('quantity1', -1)"
+          >
+            -
+          </button>
+          <br />
+        </div>
+        <p class="tot">Total: <span id="result1"></span></p>
+      </form>
+      <hr />
+      <form class="form">
+        <h2>Tea</h2>
+        <!-- Price Section -->
+        <div class="price">
+          <label>Price:</label>
+          <input type="number" id="price2" /><br />
+        </div>
+        <!-- Quantity Section -->
+        <div class="quantity">
+          <label for="quantity2">Quantity:</label>
+          <button id="add2" class="add" onclick="updateResult('quantity2', 1)">
+            +
+          </button>
+          <span type="number" id="quantity2" class="values">0</span>
+          <button
+            id="minus2"
+            class="minus"
+            onclick="updateResult('quantity2', -1)"
+          >
+            -
+          </button>
+          <br />
+        </div>
+        <p class="tot">Total: <span id="result2"></span></p>
+      </form>
+      <hr />
+      <form class="form">
+        <label class="tot">Total Price:</label>
+        <span id="totalPrice" class="tot"></span><br />
+        <div class="vat">
+          <label>Vat(13%):</label>
+          <input type="text" id="vat" class="values" value="0" disabled />
+          <br />
+        </div>
+        <div class="tip">
+          <label>Tip(10%):</label>
+          <input type="text" id="tip" class="values" value="0" disabled />
+          <br />
+        </div>
+      </form>
+      <hr />
+      <div class="gtotal">
+        <p class="tot">
+          Grand Total: <span id="grandTotal"></span> <br />
+          <button type="button" onclick="total()">Calculate Grand Total</button>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>

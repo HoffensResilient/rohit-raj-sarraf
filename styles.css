@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #00feff;
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.cap-txt {
+  font-size: 36px;
+  color: #f00;
+  margin: 25px 0;
+}
+
+.form {
+  padding: 10px 0 5px;
+}
+
+.quantity {
+  margin-top: 5px;
+}
+
+.tot {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.price label,
+.quantity label {
+  font-size: 18px;
+}
+
+.add,
+.minus {
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+#tip {
+  margin: 2px 0 10px;
+}
+
+.vat input,
+.tip input {
+  width: 50px;
+}
+
+.values {
+  background-color: white;
+  border: none;
+  outline: none;
+  color: #000;
+  padding: 2px 4px;
+  text-align: center;
+}
+
+.gtotal {
+  padding: 10px 0 5px;
+}
+
+.gtotal button {
+  padding: 5px 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
